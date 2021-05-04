@@ -1,8 +1,0 @@
-GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
-nrsjavafx,nrs20.skladiste,HomeController,73,0,0,0,19,0,5,0,5,0
-nrsjavafx,nrs20.skladiste,LoginController,38,0,0,0,14,0,5,0,5,0
-nrsjavafx,nrs20.skladiste,Product,12,69,0,0,4,19,4,10,4,10
-nrsjavafx,nrs20.skladiste,Main,34,0,0,0,12,0,3,0,3,0
-nrsjavafx,nrs20.skladiste,ProductsController,41,0,0,0,9,0,2,0,2,0
-nrsjavafx,nrs20.skladiste,ProductsModel,7,40,0,0,3,10,2,5,2,5
-nrsjavafx,nrs20.skladiste,DashController,3,0,0,0,1,0,1,0,1,0
