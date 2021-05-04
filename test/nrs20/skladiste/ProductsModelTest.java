@@ -1,5 +1,7 @@
 package nrs20.skladiste;
 
+import nrs20.skladiste.Product;
+import nrs20.skladiste.ProductsModel;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
