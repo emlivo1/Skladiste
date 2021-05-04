@@ -20,7 +20,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="nrsjavafx" target="15" />
+      <module name="nrsjavafx" target="10" />
     </bytecodeTargetLevel>
   </component>
 </project>
