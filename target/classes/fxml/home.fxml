@@ -23,7 +23,7 @@
    <children>
       <StackPane prefHeight="400.0" prefWidth="254.0" GridPane.columnSpan="4" GridPane.rowSpan="3">
          <children>
-            <BorderPane prefHeight="200.0" prefWidth="200.0">
+            <BorderPane fx:id="brHome" prefHeight="200.0" prefWidth="200.0">
                <left>
                   <ScrollPane fx:id="leftBar" prefHeight="328.0" prefWidth="131.0" BorderPane.alignment="CENTER">
                      <content>
