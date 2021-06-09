@@ -64,24 +64,16 @@ public class HomeController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         imgViewHome.setImage(new Image("/images/img.png"));
         imgViewSkladiste.setImage(new Image("/images/skladiste.png"));
-        imgMenuBtn.setImage(menuImage);
     }
 
-    public void btnToggleOnClick(ActionEvent actionEvent) throws IOException {
-        if (sideMenuToggle.isSelected()){
-            imgMenuBtn.setImage(menuImageRed);
-            TranslateTransition sideMenu = new TranslateTransition(Duration.millis(200.0), bpHome);
-            sideMenu.setByX(-130);
-            sideMenu.play();
-            bpHome.getChildren().clear();
-        }
-        else {
-            imgMenuBtn.setImage(menuImage);
-            TranslateTransition sideMenu = new TranslateTransition(Duration.millis(200.0), bpHome);
-            sideMenu.setByX(130);
-            sideMenu.play();
-            bpHome.getChildren().add(leftBar);
-        }
 
+
+    public void btnProizvodiOnClick(ActionEvent actionEvent) {
+    }
+
+    public void btnUposleniciOnClick(ActionEvent actionEvent) {
+    }
+
+    public void btnPostavkeOnClick(ActionEvent actionEvent) {
     }
 }

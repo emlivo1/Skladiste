@@ -40,7 +40,7 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <TextField fx:id="fldUsername" promptText="Username" onAction="#usernameInput" GridPane.columnSpan="2">
+                  <TextField fx:id="fldUsername" onAction="#usernameInput" promptText="Username" GridPane.columnSpan="2">
                      <effect>
                         <Blend mode="SOFT_LIGHT" />
                      </effect>
@@ -59,14 +59,23 @@
             </GridPane>
          </children>
       </HBox>
-      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2">
+      <VBox prefHeight="200.0" prefWidth="100.0" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
          <children>
-            <Button fx:id="btnLogin" defaultButton="true" mnemonicParsing="false" onAction="#btnLogin" text="Log in">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="btnLogin" defaultButton="true" mnemonicParsing="false" onAction="#btnLogin" text="Log in">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Hyperlink alignment="CENTER" contentDisplay="CENTER" text="Register" />
+               </children>
+            </HBox>
          </children>
-      </HBox>
+      </VBox>
    </children>
 </GridPane>
