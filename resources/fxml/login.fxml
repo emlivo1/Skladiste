@@ -18,7 +18,7 @@
    <children>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="362.0">
          <children>
-            <Label alignment="CENTER" contentDisplay="CENTER" text="Sign in ">
+            <Label alignment="CENTER" contentDisplay="CENTER" text="Prijavite se">
                <font>
                   <Font size="30.0" />
                </font>
@@ -40,14 +40,14 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <TextField fx:id="fldUsername" onAction="#usernameInput" promptText="Username" GridPane.columnSpan="2">
+                  <TextField fx:id="fldUsername" onAction="#usernameInput" promptText="Korisničko ime" GridPane.columnSpan="2">
                      <effect>
                         <Blend mode="SOFT_LIGHT" />
                      </effect>
                      <padding>
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                      </padding></TextField>
-                  <PasswordField fx:id="fldPassword" onAction="#passInput" promptText="Password" GridPane.columnSpan="2" GridPane.rowIndex="1">
+                  <PasswordField fx:id="fldPassword" onAction="#passInput" promptText="Lozinka" GridPane.columnSpan="2" GridPane.rowIndex="1">
                      <padding>
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                      </padding>
@@ -63,7 +63,7 @@
          <children>
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <Button fx:id="btnLogin" defaultButton="true" mnemonicParsing="false" onAction="#btnLogin" text="Log in">
+                  <Button fx:id="btnLogin" defaultButton="true" mnemonicParsing="false" onAction="#btnLogin" text="Prijava">
                      <font>
                         <Font size="18.0" />
                      </font>
