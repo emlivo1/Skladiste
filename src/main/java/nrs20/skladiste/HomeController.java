@@ -12,6 +12,7 @@ import javafx.scene.control.ScrollPane;
 import javafx.scene.control.ToggleButton;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.StackPane;
@@ -94,6 +95,15 @@ public class HomeController implements Initializable {
     }
 
     public void btnUposleniciOnClick(ActionEvent actionEvent) {
+        FXMLLoader fxmlLoader = new FXMLLoader();
+
+        try {
+            fxmlLoader.load(this.getClass().getResource("/fxml/uposlenici.fxml").openStream());
+        } catch (IOException var4) {
+        }
+        GridPane root = (GridPane)fxmlLoader.getRoot();
+        this.acContent.getChildren().clear();
+        this.acContent.getChildren().add(root);
     }
 
     public void btnPostavkeOnClick(ActionEvent actionEvent) {
