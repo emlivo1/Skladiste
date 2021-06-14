@@ -47,5 +47,21 @@ public class LoginController implements Initializable {
     }
 
     public void hlKreirajRacun(ActionEvent actionEvent) {
+        otvoriRegistraciju();
+    }
+    private void otvoriRegistraciju(){
+        Parent root = null;
+        try {
+            root = FXMLLoader.load(getClass().getResource("/fxml/registracija.fxml"));
+            Scene scene = new Scene(root);
+            Stage nStage = new Stage();
+            nStage.setScene(scene);
+            nStage.setTitle("Registracija");
+            nStage.show();
+            Stage stage = (Stage) hlRegisterAccount.getScene().getWindow();
+            stage.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
