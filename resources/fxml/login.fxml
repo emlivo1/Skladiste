@@ -72,7 +72,7 @@
             </HBox>
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <Hyperlink fx:id="hlRegisterAccount" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="true" style="-fx-background-color: lightgray;" text="Kreirajte korisnički račun" />
+                  <Hyperlink fx:id="hlRegisterAccount" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="true" style="-fx-background-color: lightgray;" onAction="#hlKreirajRacun" text="Kreirajte korisnički račun" />
                </children>
             </HBox>
          </children>

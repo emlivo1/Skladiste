@@ -2,6 +2,7 @@ package nrs20.skladiste;
 
 import javafx.animation.TranslateTransition;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
@@ -26,23 +27,44 @@ import static javafx.scene.control.PopupControl.USE_COMPUTED_SIZE;
 public class HomeController implements Initializable {
     public ScrollPane leftBar;
     public Button btnHome;
-    public ImageView imgViewHome;
+
     public Button btnSkladiste;
-    public ImageView imgViewSkladiste;
+
     public StackPane acContent;
     public ToggleButton sideMenuToggle;
-    public ImageView imgMenuBtn;
     public BorderPane bpHome;
     public Button btnProizvodi;
-    public ImageView imgViewProizvodi;
+
     public Button btnUposlenici;
-    public ImageView imgViewUposlenici;
+
     public Button btnPostavke;
-    public ImageView imgViewPostavke;
+
     public Button btnHelp;
-    public ImageView imgViewHelp;
 
 
+    @FXML
+    private ImageView imgViewProizvodi;
+    @FXML
+    private ImageView imgViewHelp;
+    @FXML
+    private ImageView imgViewUposlenici;
+    @FXML
+    private ImageView imgViewPostavke;
+    @FXML
+    private ImageView imgViewHome;
+    @FXML
+    private ImageView imgViewSkladiste;
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        imgViewHome.setImage(new Image("/images/img.png"));
+        imgViewSkladiste.setImage(new Image("/images/skladiste.png"));
+        imgViewUposlenici.setImage(new Image("/images/uposlenici.png"));
+        imgViewPostavke.setImage(new Image("/images/postavke.png"));
+        imgViewProizvodi.setImage(new Image("/images/proizvodi.png"));
+        imgViewHelp.setImage(new Image("/images/help.png"));
+
+    }
     public void btnHomeOnClick(ActionEvent actionEvent) {
         FXMLLoader fxmlLoader = new FXMLLoader();
 
@@ -59,11 +81,7 @@ public class HomeController implements Initializable {
 
     }
 
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
-        imgViewHome.setImage(new Image("/images/img.png"));
-        imgViewSkladiste.setImage(new Image("/images/skladiste.png"));
-    }
+
 
 
 
@@ -82,6 +100,15 @@ public class HomeController implements Initializable {
     }
 
     public void btnHelpOnClick(ActionEvent actionEvent) {
+        FXMLLoader fxmlLoader = new FXMLLoader();
+
+        try {
+            fxmlLoader.load(this.getClass().getResource("/fxml/help.fxml").openStream());
+        } catch (IOException var4) {
+        }
+        GridPane root = (GridPane)fxmlLoader.getRoot();
+        this.acContent.getChildren().clear();
+        this.acContent.getChildren().add(root);
     }
 
 }
