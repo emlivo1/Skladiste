@@ -6,7 +6,7 @@
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nrs20.skladiste.HomeController">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="502.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nrs20.skladiste.HomeController">
     <stylesheets>
         <URL value="@/css/style.css" />
     </stylesheets>
@@ -28,43 +28,49 @@
                <left>
                   <ScrollPane fx:id="leftBar" prefHeight="328.0" prefWidth="131.0" BorderPane.alignment="CENTER">
                      <content>
-                        <GridPane alignment="CENTER" prefHeight="398.0" prefWidth="129.0" style="-fx-background-color: black;">
+                        <GridPane alignment="CENTER" prefHeight="499.0" prefWidth="129.0" style="-fx-background-color: black;">
                           <columnConstraints>
                             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                           </columnConstraints>
                           <rowConstraints>
-                            <RowConstraints maxHeight="134.0" minHeight="10.0" prefHeight="73.0" vgrow="SOMETIMES" />
-                            <RowConstraints maxHeight="151.0" minHeight="10.0" prefHeight="86.0" vgrow="SOMETIMES" />
-                            <RowConstraints maxHeight="148.0" minHeight="10.0" prefHeight="78.0" vgrow="SOMETIMES" />
-                              <RowConstraints maxHeight="111.0" minHeight="10.0" prefHeight="87.0" vgrow="SOMETIMES" />
-                              <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                            <RowConstraints fillHeight="false" maxHeight="129.0" minHeight="10.0" prefHeight="77.0" vgrow="ALWAYS" />
+                            <RowConstraints maxHeight="134.0" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="166.0" minHeight="10.0" prefHeight="82.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="203.0" minHeight="0.0" prefHeight="85.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="129.0" minHeight="10.0" prefHeight="89.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="129.0" minHeight="10.0" prefHeight="76.0" vgrow="SOMETIMES" />
                           </rowConstraints>
                            <children>
-                              <Button fx:id="btnHome" contentDisplay="TOP" mnemonicParsing="false" onAction="#btnHomeOnClick" prefHeight="78.0" prefWidth="127.0" style="-fx-background-color: gray;" text="Home">
+                              <Button fx:id="btnHome" contentDisplay="TOP" mnemonicParsing="false" onAction="#btnHomeOnClick" prefHeight="28.0" prefWidth="115.0" style="-fx-background-color: gray;" text="Home">
                                  <graphic>
                                     <ImageView fx:id="imgViewHome" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
 
 
                                  </graphic>
                               </Button>
-                              <Button fx:id="btnSkladiste" contentDisplay="TOP" mnemonicParsing="false" onAction="#btnSkladisteOnClick" prefHeight="78.0" prefWidth="119.0" style="-fx-background-color: gray;" text="Skladište" GridPane.rowIndex="1">
+                              <Button fx:id="btnSkladiste" contentDisplay="TOP" mnemonicParsing="false" onAction="#btnSkladisteOnClick" prefHeight="73.0" prefWidth="115.0" style="-fx-background-color: gray;" text="Skladište" GridPane.rowIndex="1">
                                  <graphic>
                                     <ImageView fx:id="imgViewSkladiste" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
                                  </graphic>
                               </Button>
-                               <Button fx:id="btnProizvodi" contentDisplay="TOP" mnemonicParsing="false" onAction="#btnProizvodiOnClick" prefHeight="78.0" prefWidth="127.0" style="-fx-background-color: gray;" text="Proizvodi" GridPane.rowIndex="2">
+                               <Button fx:id="btnProizvodi" contentDisplay="TOP" mnemonicParsing="false" onAction="#btnProizvodiOnClick" prefHeight="78.0" prefWidth="115.0" style="-fx-background-color: gray;" text="Proizvodi" GridPane.rowIndex="2">
                                    <graphic>
                                        <ImageView fx:id="imgViewProizvodi" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
                                    </graphic>
                                </Button>
-                               <Button fx:id="btnUposlenici" contentDisplay="TOP" mnemonicParsing="false" onAction="#btnUposleniciOnClick" prefHeight="78.0" prefWidth="127.0" style="-fx-background-color: gray;" text="Uposlenici" GridPane.rowIndex="3">
+                               <Button fx:id="btnUposlenici" contentDisplay="TOP" mnemonicParsing="false" onAction="#btnUposleniciOnClick" prefHeight="78.0" prefWidth="116.0" style="-fx-background-color: gray;" text="Uposlenici" GridPane.rowIndex="3">
                                    <graphic>
                                        <ImageView fx:id="imgViewUposlenici" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
                                    </graphic>
                                </Button>
-                               <Button fx:id="btnPostavke" contentDisplay="TOP" mnemonicParsing="false" onAction="#btnPostavkeOnClick" prefHeight="78.0" prefWidth="127.0" style="-fx-background-color: gray;" text="Postavke" GridPane.rowIndex="3">
+                               <Button fx:id="btnPostavke" contentDisplay="TOP" mnemonicParsing="false" onAction="#btnPostavkeOnClick" prefHeight="78.0" prefWidth="117.0" style="-fx-background-color: gray;" text="Postavke" GridPane.rowIndex="4">
                                    <graphic>
                                        <ImageView fx:id="imgViewPostavke" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
+                                   </graphic>
+                               </Button>
+                               <Button fx:id="btnHelp" contentDisplay="TOP" mnemonicParsing="false" onAction="#btnHelpOnClick" prefHeight="73.0" prefWidth="117.0" style="-fx-background-color: gray;" text="Pomoć" GridPane.rowIndex="5">
+                                   <graphic>
+                                       <ImageView fx:id="imgViewHelp" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
                                    </graphic>
                                </Button>
                            </children>

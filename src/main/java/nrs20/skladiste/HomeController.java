@@ -33,11 +33,14 @@ public class HomeController implements Initializable {
     public ToggleButton sideMenuToggle;
     public ImageView imgMenuBtn;
     public BorderPane bpHome;
-
-
-    Image menuImage = new Image("/images/menuicon.png");
-    Image menuImageRed = new Image("/images/menuiconred.png");
-
+    public Button btnProizvodi;
+    public ImageView imgViewProizvodi;
+    public Button btnUposlenici;
+    public ImageView imgViewUposlenici;
+    public Button btnPostavke;
+    public ImageView imgViewPostavke;
+    public Button btnHelp;
+    public ImageView imgViewHelp;
 
 
     public void btnHomeOnClick(ActionEvent actionEvent) {
@@ -53,11 +56,7 @@ public class HomeController implements Initializable {
     }
 
     public void btnSkladisteOnClick(ActionEvent actionEvent) throws IOException {
-        Stage myStage = new Stage();
-        Parent root = FXMLLoader.load(getClass().getResource("/fxml/products.fxml"));
-        myStage.setTitle("Products");
-        myStage.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));
-        myStage.show();
+
     }
 
     @Override
@@ -68,7 +67,12 @@ public class HomeController implements Initializable {
 
 
 
-    public void btnProizvodiOnClick(ActionEvent actionEvent) {
+    public void btnProizvodiOnClick(ActionEvent actionEvent) throws IOException {
+        Stage myStage = new Stage();
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/products.fxml"));
+        myStage.setTitle("Products");
+        myStage.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));
+        myStage.show();
     }
 
     public void btnUposleniciOnClick(ActionEvent actionEvent) {
@@ -76,4 +80,8 @@ public class HomeController implements Initializable {
 
     public void btnPostavkeOnClick(ActionEvent actionEvent) {
     }
+
+    public void btnHelpOnClick(ActionEvent actionEvent) {
+    }
+
 }
