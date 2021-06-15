@@ -23,19 +23,19 @@
                                     <children>
                                         <MenuBar layoutX="81.0" layoutY="16.0">
                                             <menus>
-                                                <Menu mnemonicParsing="false" text="Account">
+                                                <Menu mnemonicParsing="false" text="Račun">
                                                     <items>
-                                                        <MenuItem fx:id="miMyASccount" mnemonicParsing="false" onAction="#miMyASccountOnClick" text="My Account" />
+                                                        <MenuItem fx:id="miMyAccount" mnemonicParsing="false" onAction="#miMyASccountOnClick" text="Moj račun" />
                                                     </items>
                                                 </Menu>
-                                                <Menu mnemonicParsing="false" text="Organize">
+                                                <Menu mnemonicParsing="false" text="Organizacija">
                                                     <items>
-                                                        <MenuItem fx:id="miOrganize" mnemonicParsing="false" onAction="#miOrganizeOnAction" text="Organize Details" />
+                                                        <MenuItem fx:id="miOrganize" mnemonicParsing="false" onAction="#miOrganizeOnAction" text="Organizacija detalji" />
                                                     </items>
                                                 </Menu>
                                                 <Menu mnemonicParsing="false" text="Data Backup" visible="false">
                                                     <items>
-                                                        <MenuItem fx:id="miBackup" mnemonicParsing="false" onAction="#miBackupOnAction" text="Backup/Restor" />
+                                                        <MenuItem fx:id="miBackup" mnemonicParsing="false" onAction="#miBackupOnAction" text="Backup/Restore" />
                                                     </items>
                                                 </Menu>
                                             </menus>

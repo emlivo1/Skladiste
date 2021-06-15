@@ -79,12 +79,17 @@ public class HomeController implements Initializable {
     }
 
     public void btnSkladisteOnClick(ActionEvent actionEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader();
+
+        try {
+            fxmlLoader.load(this.getClass().getResource("/fxml/skladiste.fxml").openStream());
+        } catch (IOException var4) {
+        }
+        GridPane root = (GridPane)fxmlLoader.getRoot();
+        this.acContent.getChildren().clear();
+        this.acContent.getChildren().add(root);
 
     }
-
-
-
-
 
     public void btnProizvodiOnClick(ActionEvent actionEvent) throws IOException {
         Stage myStage = new Stage();
@@ -107,6 +112,15 @@ public class HomeController implements Initializable {
     }
 
     public void btnPostavkeOnClick(ActionEvent actionEvent) {
+        FXMLLoader fxmlLoader = new FXMLLoader();
+
+        try {
+            fxmlLoader.load(this.getClass().getResource("/fxml/postavke.fxml").openStream());
+        } catch (IOException var4) {
+        }
+        GridPane root = (GridPane)fxmlLoader.getRoot();
+        this.acContent.getChildren().clear();
+        this.acContent.getChildren().add(root);
     }
 
     public void btnHelpOnClick(ActionEvent actionEvent) {
