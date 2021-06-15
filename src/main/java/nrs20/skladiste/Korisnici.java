@@ -14,5 +14,5 @@ public class Korisnici {
     public String status;
 
     public ObservableList<String> sviKorisnici= FXCollections.observableArrayList();
-
+    public ObservableList<Uposlenici> listaUposlenika=FXCollections.observableArrayList();
 }
