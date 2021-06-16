@@ -1,6 +1,7 @@
 package controller;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
@@ -15,7 +16,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class LoginController implements Initializable {
+public class LoginController {
     public TextField fldUsername;
     public PasswordField fldPassword;
     public Button btnLogin;
@@ -25,7 +26,6 @@ public class LoginController implements Initializable {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/home.fxml"));
             Parent root1 = (Parent) fxmlLoader.load();
-
             Stage stage = new Stage();
             stage.setTitle("Skladiste");
             stage.setScene(new Scene(root1));
@@ -41,9 +41,28 @@ public class LoginController implements Initializable {
     public void usernameInput(ActionEvent actionEvent) {
     }
 
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
+    @FXML
+    public void initialize() {
 
+        fldUsername.textProperty().addListener((obs, oldIme, newIme) -> {
+            if (!newIme.isEmpty() && newIme.equals("admin")) {
+                fldUsername.getStyleClass().removeAll("poljeNijeIspravno");
+                fldUsername.getStyleClass().add("poljeIspravno");
+            } else {
+                fldUsername.getStyleClass().removeAll("poljeIspravno");
+                fldUsername.getStyleClass().add("poljeNijeIspravno");
+            }
+        });
+
+        fldPassword.textProperty().addListener((obs, oldIme, newIme) -> {
+            if (!newIme.isEmpty()  && newIme.equals("admin")){
+                fldPassword.getStyleClass().removeAll("poljeNijeIspravno");
+                fldPassword.getStyleClass().add("poljeIspravno");
+            } else {
+                fldPassword.getStyleClass().removeAll("poljeIspravno");
+                fldPassword.getStyleClass().add("poljeNijeIspravno");
+            }
+        });
     }
 
     public void hlKreirajRacun(ActionEvent actionEvent) {

@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<GridPane id="GPane" prefHeight="526.0" prefWidth="736.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nrs20.skladiste.UposleniciController">
+<GridPane id="GPane" prefHeight="526.0" prefWidth="736.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UposleniciController">
     <children>
         <BorderPane fx:id="bpContent" layoutX="318.0" layoutY="172.0" prefHeight="526.0" prefWidth="736.0">
             <center>

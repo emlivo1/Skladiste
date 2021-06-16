@@ -4,7 +4,7 @@
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<GridPane id="GPane" prefHeight="560.0" prefWidth="713.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nrs20.skladiste.DodajUposlenikaController">
+<GridPane id="GPane" prefHeight="560.0" prefWidth="713.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DodajUposlenikaController">
     <children>
         <HBox alignment="CENTER" layoutX="300.0" layoutY="167.0" prefHeight="481.0" prefWidth="612.0">
             <children>
