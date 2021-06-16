@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="310.0" prefWidth="576.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" >
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints maxHeight="361.0" minHeight="222.0" prefHeight="222.0" />
+   </rowConstraints>
+   <children>
+      <Label alignment="CENTER" contentDisplay="BOTTOM" lineSpacing="2.0" prefHeight="104.0" prefWidth="600.0" text="Projekat rađen na predmetu &quot;Napredni razvoj softvera&quot; " textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+   </children>
+</GridPane>

@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<GridPane id="GridPane" prefHeight="541.0" prefWidth="733.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nrs20.skladiste.PostavkeController">
+<GridPane id="GridPane" prefHeight="541.0" prefWidth="733.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PostavkeController">
     <children>
         <BorderPane fx:id="bpSettings" layoutX="239.0" layoutY="131.0" prefHeight="541.0" prefWidth="733.0">
             <top>

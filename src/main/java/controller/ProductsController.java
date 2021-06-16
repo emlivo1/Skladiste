@@ -1,4 +1,4 @@
-package nrs20.skladiste;
+package controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.ListView;
@@ -6,6 +6,8 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.MapValueFactory;
 import javafx.scene.control.cell.PropertyValueFactory;
+import nrs20.skladiste.Product;
+import nrs20.skladiste.ProductsModel;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

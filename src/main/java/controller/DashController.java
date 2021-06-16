@@ -1,4 +1,4 @@
-package nrs20.skladiste;
+package controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;

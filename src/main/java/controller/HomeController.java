@@ -1,4 +1,4 @@
-package nrs20.skladiste;
+package controller;
 
 import javafx.animation.TranslateTransition;
 import javafx.event.ActionEvent;
