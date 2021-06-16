@@ -12,6 +12,7 @@ import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.ResourceBundle;
 
 public class RegistracijaController {
     public Hyperlink hlLogin;
@@ -28,8 +29,10 @@ public class RegistracijaController {
     }
 
     public void hlLogin(ActionEvent actionEvent) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("/fxml/login.fxml"));
-        Scene scene = new Scene(root);
+        ResourceBundle bundle = ResourceBundle.getBundle("Translation");
+        FXMLLoader loader = new FXMLLoader( getClass().getResource(
+                "/fxml/login.fxml" ), bundle);
+        Scene scene = new Scene(loader.load());
         Stage nStage = new Stage();
         nStage.setScene(scene);
         nStage.setTitle("Prijava");

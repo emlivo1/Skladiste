@@ -68,73 +68,100 @@ public class HomeController implements Initializable {
 
     }
     public void btnHomeOnClick(ActionEvent actionEvent) {
-        FXMLLoader fxmlLoader = new FXMLLoader();
-
         try {
-            fxmlLoader.load(this.getClass().getResource("/fxml/dash.fxml").openStream());
-        } catch (IOException var4) {
+            ResourceBundle bundle = ResourceBundle.getBundle("Translation");
+            FXMLLoader loader = new FXMLLoader( getClass().getResource(
+                    "/fxml/home.fxml" ), bundle);
+            Parent root1 = (Parent) loader.load();
+            Stage stage = new Stage();
+            stage.setTitle("Skladiste");
+            stage.setScene(new Scene(root1));
+            stage.show();
+        } catch(Exception e) {
+            e.printStackTrace();
         }
-        GridPane root = (GridPane)fxmlLoader.getRoot();
-        this.acContent.getChildren().clear();
-        this.acContent.getChildren().add(root);
     }
+
 
     public void btnSkladisteOnClick(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader();
-
         try {
-            fxmlLoader.load(this.getClass().getResource("/fxml/skladiste.fxml").openStream());
-        } catch (IOException var4) {
+            ResourceBundle bundle = ResourceBundle.getBundle("Translation");
+            FXMLLoader loader = new FXMLLoader( getClass().getResource(
+                    "/fxml/skladiste.fxml" ), bundle);
+            Parent root1 = (Parent) loader.load();
+            Stage stage = new Stage();
+            stage.setTitle("Skladiste");
+            stage.setScene(new Scene(root1));
+            stage.show();
+        } catch(Exception e) {
+            e.printStackTrace();
         }
-        GridPane root = (GridPane)fxmlLoader.getRoot();
-        this.acContent.getChildren().clear();
-        this.acContent.getChildren().add(root);
     }
+
 
 
 
     public void btnProizvodiOnClick(ActionEvent actionEvent) throws IOException {
-        Stage myStage = new Stage();
-        Parent root = FXMLLoader.load(getClass().getResource("/fxml/products.fxml"));
-        myStage.setTitle("Products");
-        myStage.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));
-        myStage.show();
+        try {
+            ResourceBundle bundle = ResourceBundle.getBundle("Translation");
+            FXMLLoader loader = new FXMLLoader( getClass().getResource("/fxml/products.fxml" ), bundle);
+            Parent root1 = (Parent) loader.load();
+            Stage stage = new Stage();
+            stage.setTitle("Skladiste");
+            stage.setScene(new Scene(root1));
+            stage.show();
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
     }
 
+
     public void btnUposleniciOnClick(ActionEvent actionEvent) {
-        FXMLLoader fxmlLoader = new FXMLLoader();
         try {
-            fxmlLoader.load(this.getClass().getResource("/fxml/uposlenici.fxml").openStream());
-        } catch (IOException var4) {
+        ResourceBundle bundle = ResourceBundle.getBundle("Translation");
+        FXMLLoader loader = new FXMLLoader( getClass().getResource(
+        "/fxml/uposlenici.fxml" ), bundle);
+        Parent root1 = (Parent) loader.load();
+        Stage stage = new Stage();
+        stage.setTitle("Skladiste");
+        stage.setScene(new Scene(root1));
+        stage.show();
+        } catch(Exception e) {
+        e.printStackTrace();
         }
-        GridPane root = (GridPane)fxmlLoader.getRoot();
-        this.acContent.getChildren().clear();
-        this.acContent.getChildren().add(root);
+
     }
 
     public void btnPostavkeOnClick(ActionEvent actionEvent) {
-        FXMLLoader fxmlLoader = new FXMLLoader();
-
         try {
-            fxmlLoader.load(this.getClass().getResource("/fxml/postavke.fxml").openStream());
-        } catch (IOException var4) {
+        ResourceBundle bundle = ResourceBundle.getBundle("Translation");
+        FXMLLoader loader = new FXMLLoader( getClass().getResource("/fxml/postavke.fxml" ), bundle);
+        Parent root1 = (Parent) loader.load();
+        Stage stage = new Stage();
+        stage.setTitle("Skladiste");
+        stage.setScene(new Scene(root1));
+        stage.show();
+        } catch(Exception e) {
+        e.printStackTrace();
         }
-        GridPane root = (GridPane)fxmlLoader.getRoot();
-        this.acContent.getChildren().clear();
-        this.acContent.getChildren().add(root);
+
     }
 
     public void btnHelpOnClick(ActionEvent actionEvent) {
-        FXMLLoader fxmlLoader = new FXMLLoader();
 
         try {
-            fxmlLoader.load(this.getClass().getResource("/fxml/help.fxml").openStream());
-        } catch (IOException var4) {
+        ResourceBundle bundle = ResourceBundle.getBundle("Translation");
+        FXMLLoader loader = new FXMLLoader( getClass().getResource("/fxml/help.fxml" ), bundle);
+        Parent root1 = (Parent) loader.load();
+        Stage stage = new Stage();
+        stage.setTitle("Skladiste");
+        stage.setScene(new Scene(root1));
+        stage.show();
+        } catch(Exception e) {
+        e.printStackTrace();
         }
-        GridPane root = (GridPane)fxmlLoader.getRoot();
-        this.acContent.getChildren().clear();
-        this.acContent.getChildren().add(root);
-    }
+        }
+
 
     public void korisnikOnClick(ActionEvent actionEvent) {
     }

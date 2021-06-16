@@ -24,8 +24,10 @@ public class LoginController {
 
     public void btnLogin(ActionEvent actionEvent) throws IOException {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/home.fxml"));
-            Parent root1 = (Parent) fxmlLoader.load();
+            ResourceBundle bundle = ResourceBundle.getBundle("Translation");
+            FXMLLoader loader = new FXMLLoader( getClass().getResource(
+                    "/fxml/home.fxml" ), bundle);
+            Parent root1 = (Parent) loader.load();
             Stage stage = new Stage();
             stage.setTitle("Skladiste");
             stage.setScene(new Scene(root1));
@@ -70,17 +72,15 @@ public class LoginController {
     }
     private void otvoriRegistraciju(){
         Parent root = null;
-        try {
-            root = FXMLLoader.load(getClass().getResource("/fxml/registracija.fxml"));
-            Scene scene = new Scene(root);
-            Stage nStage = new Stage();
-            nStage.setScene(scene);
-            nStage.setTitle("Registracija");
-            nStage.show();
-            Stage stage = (Stage) hlRegisterAccount.getScene().getWindow();
-            stage.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        ResourceBundle bundle = ResourceBundle.getBundle("Translation");
+        FXMLLoader loader = new FXMLLoader( getClass().getResource(
+                "/fxml/registracija.fxml" ), bundle);
+        Scene scene = new Scene(root);
+        Stage nStage = new Stage();
+        nStage.setScene(scene);
+        nStage.setTitle("Registracija");
+        nStage.show();
+        Stage stage = (Stage) hlRegisterAccount.getScene().getWindow();
+        stage.close();
     }
 }

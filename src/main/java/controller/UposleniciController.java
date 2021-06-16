@@ -11,6 +11,7 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.StackPane;
 
 import java.io.IOException;
+import java.util.ResourceBundle;
 
 public class UposleniciController {
     public Label lblView;
@@ -24,10 +25,11 @@ public class UposleniciController {
         lblView.setText("Dodaj uposlenika");
         DodajUposlenikaController vec = new DodajUposlenikaController();
 
-        FXMLLoader fXMLLoader = new FXMLLoader();
-        fXMLLoader.load(getClass().getResource("/fxml/dodajUposlenika.fxml").openStream());
-        DodajUposlenikaController dodajUposlenikaController = fXMLLoader.getController();
-        GridPane GPane = fXMLLoader.getRoot();
+        ResourceBundle bundle = ResourceBundle.getBundle("Translation");
+        FXMLLoader loader = new FXMLLoader( getClass().getResource(
+                "/fxml/dodajUposlenika.fxml" ), bundle);
+        DodajUposlenikaController dodajUposlenikaController = loader.getController();
+        GridPane GPane = loader.getRoot();
         spEmployeContent.getChildren().clear();
         spEmployeContent.getChildren().add(GPane);
 

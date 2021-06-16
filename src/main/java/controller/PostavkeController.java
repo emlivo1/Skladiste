@@ -9,6 +9,7 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.StackPane;
 
 import java.io.IOException;
+import java.util.ResourceBundle;
 
 public class PostavkeController {
     public StackPane spSettingContent;
@@ -21,10 +22,11 @@ public class PostavkeController {
         lblCurrentStatus.setText("Korisnicki racun");
         DodajUposlenikaController vec = new DodajUposlenikaController();
 
-        FXMLLoader fXMLLoader = new FXMLLoader();
-        fXMLLoader.load(getClass().getResource("/fxml/racun.fxml").openStream());
-        RacunController racunController = fXMLLoader.getController();
-        GridPane GPane = fXMLLoader.getRoot();
+        ResourceBundle bundle = ResourceBundle.getBundle("Translation");
+        FXMLLoader loader = new FXMLLoader( getClass().getResource(
+                "/fxml/login.fxml" ), bundle);
+        RacunController racunController = loader.getController();
+        GridPane GPane =loader.getRoot();
         spSettingContent.getChildren().clear();
         spSettingContent.getChildren().add(GPane);
     }
