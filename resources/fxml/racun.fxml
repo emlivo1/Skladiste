@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane id="GPane" fx:id="apMyAccountMother" onMouseClicked="#apOnOpenAction" prefHeight="509.0" prefWidth="687.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RacunController">
+    <children>
+        <HBox alignment="CENTER" layoutX="200.0" layoutY="150.0" prefHeight="509.0" prefWidth="666.0">
+            <children>
+                <GridPane prefHeight="459.0" prefWidth="396.0">
+                    <children>
+                        <TextField fx:id="tfUserName" editable="false" layoutX="20.0" layoutY="22.0" prefHeight="29.0" prefWidth="355.0" promptText="%Korisnicko" GridPane.rowIndex="2" />
+                        <TextField fx:id="tfFullName" layoutX="20.0" layoutY="63.0" prefHeight="32.0" prefWidth="377.0" promptText="%Imeprezime" GridPane.rowIndex="3" />
+                        <TextField fx:id="tfContractNumber" layoutX="20.0" layoutY="104.0" prefHeight="29.0" prefWidth="355.0" promptText="%Telefon" GridPane.rowIndex="4" />
+                        <TextField fx:id="tfEmailAddress" layoutX="21.0" layoutY="147.0" prefHeight="29.0" prefWidth="355.0" promptText="%Email" GridPane.rowIndex="5" />
+                        <TextArea fx:id="taAddress" layoutX="21.0" layoutY="197.0" prefHeight="115.0" prefWidth="355.0" promptText="%Adresa" text="Adresa&#10;&#10;&#10;&#10;" GridPane.rowIndex="6" />
+                        <Button fx:id="btnSave" layoutX="310.0" layoutY="361.0" mnemonicParsing="false" onAction="#btnSaveOnAction" text="%Spremi" GridPane.rowIndex="9" GridPane.rowSpan="3" />
+                        <Hyperlink fx:id="hlChangePassword" layoutX="21.0" layoutY="324.0" onAction="#hlChangePasswordOnClick" text="%Promijenilozinku" GridPane.rowIndex="7" GridPane.rowSpan="3" />
+                    </children>
+               <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="377.0" minWidth="332.0" prefWidth="377.0" />
+                  <ColumnConstraints maxWidth="64.0" minWidth="10.0" prefWidth="19.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                  <RowConstraints maxHeight="46.0" minHeight="10.0" prefHeight="29.0" />
+                  <RowConstraints maxHeight="79.0" minHeight="10.0" prefHeight="60.0" />
+                  <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="31.0" />
+                  <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="60.0" />
+                  <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="60.0" />
+                  <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="60.0" />
+                  <RowConstraints maxHeight="24.0" minHeight="0.0" prefHeight="0.0" />
+                  <RowConstraints maxHeight="24.0" minHeight="10.0" prefHeight="24.0" />
+                  <RowConstraints maxHeight="24.0" minHeight="10.0" prefHeight="30.0" />
+                  <RowConstraints maxHeight="24.0" minHeight="10.0" prefHeight="30.0" />
+                  <RowConstraints maxHeight="24.0" minHeight="10.0" prefHeight="30.0" />
+                  <RowConstraints maxHeight="24.0" minHeight="10.0" prefHeight="30.0" />
+               </rowConstraints></GridPane>
+            </children>
+        </HBox>
+    </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

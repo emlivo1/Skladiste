@@ -5,19 +5,19 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.MenuButton;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.ToggleButton;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
-import javafx.util.Duration;
 
 import java.io.IOException;
 import java.net.URL;
@@ -41,6 +41,7 @@ public class HomeController implements Initializable {
     public Button btnPostavke;
 
     public Button btnHelp;
+    public MenuButton btnKorisnik;
 
 
     @FXML
@@ -88,8 +89,9 @@ public class HomeController implements Initializable {
         GridPane root = (GridPane)fxmlLoader.getRoot();
         this.acContent.getChildren().clear();
         this.acContent.getChildren().add(root);
-
     }
+
+
 
     public void btnProizvodiOnClick(ActionEvent actionEvent) throws IOException {
         Stage myStage = new Stage();
@@ -101,7 +103,6 @@ public class HomeController implements Initializable {
 
     public void btnUposleniciOnClick(ActionEvent actionEvent) {
         FXMLLoader fxmlLoader = new FXMLLoader();
-
         try {
             fxmlLoader.load(this.getClass().getResource("/fxml/uposlenici.fxml").openStream());
         } catch (IOException var4) {
@@ -135,4 +136,6 @@ public class HomeController implements Initializable {
         this.acContent.getChildren().add(root);
     }
 
+    public void korisnikOnClick(ActionEvent actionEvent) {
+    }
 }

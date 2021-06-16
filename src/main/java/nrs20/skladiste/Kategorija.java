@@ -1,9 +1,9 @@
 package nrs20.skladiste;
 
 public class Kategorija {
-    public int kategorijaId;
-    public String naziv;
-    public String opis;
+    private int kategorijaId;
+    private String naziv;
+    private String opis;
 
     public Kategorija(int kategorijaId, String naziv, String opis) {
         this.kategorijaId = kategorijaId;

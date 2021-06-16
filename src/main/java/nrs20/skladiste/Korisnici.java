@@ -4,14 +4,14 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
 public class Korisnici {
-    public int id;
-    public String korisnickoIme;
-    public String ime;
-    public String prezime;
-    public String email;
-    public String adresa;
-    public String lozinka;
-    public String status;
+    private int id;
+    private String korisnickoIme;
+    private String ime;
+    private String prezime;
+    private String email;
+    private String adresa;
+    private String lozinka;
+    private String status;
 
     public ObservableList<String> sviKorisnici= FXCollections.observableArrayList();
     public ObservableList<Uposlenici> listaUposlenika=FXCollections.observableArrayList();

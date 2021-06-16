@@ -21,29 +21,29 @@
             <children>
                 <VBox alignment="TOP_CENTER" prefHeight="385.0" prefWidth="372.0" spacing="5.0">
                     <children>
-                        <Label alignment="CENTER" text="Skladište &quot;NRS&quot;">
+                        <Label alignment="CENTER" text="%Skladiste">
                             <font>
                                 <Font size="29.0" />
                             </font>
                         </Label>
-                        <Label text="Adress">
+                        <Label text="%Adresa">
                             <font>
                                 <Font size="15.0" />
                             </font>
                         </Label>
-                        <Label text="Phone number" />
+                        <Label text="%Telefon" />
                   <BorderPane prefHeight="200.0" prefWidth="200.0">
                      <top>
-                        <Button fx:id="btnOSkladistu" minHeight="-Infinity" minWidth="134.0" mnemonicParsing="false" onAction="#btnOSkladistuOnclick" text="O skladištu" BorderPane.alignment="CENTER">
+                        <Button fx:id="btnOSkladistu" minHeight="-Infinity" minWidth="134.0" mnemonicParsing="false" onAction="#btnOSkladistuOnclick" text="%Oskladistu" BorderPane.alignment="CENTER">
                            <BorderPane.margin>
                               <Insets />
                            </BorderPane.margin></Button>
                      </top>
                      <center>
-                        <Button fx:id="btnCentarZaPomoc" minWidth="134.0" mnemonicParsing="false" onAction="#btnCentarZaPomocOnClick" text="Centar za pomoć" BorderPane.alignment="CENTER" />
+                        <Button fx:id="btnCentarZaPomoc" minWidth="134.0" mnemonicParsing="false" onAction="#btnCentarZaPomocOnClick" text="%centarpomoc" BorderPane.alignment="CENTER" />
                      </center>
                      <bottom>
-                        <Button fx:id="btnPrijaviProblem" minWidth="134.0" mnemonicParsing="false" onAction="#btnPrijaviProblemOnClick" text="Prijavi problem" BorderPane.alignment="CENTER" />
+                        <Button fx:id="btnPrijaviProblem" minWidth="134.0" mnemonicParsing="false" onAction="#btnPrijaviProblemOnClick" text="%Prijaviproblem" BorderPane.alignment="CENTER" />
                      </bottom>
                      <padding>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />

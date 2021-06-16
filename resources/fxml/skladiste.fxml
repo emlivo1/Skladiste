@@ -22,10 +22,7 @@
                             <children>
                                 <HBox alignment="CENTER_RIGHT" GridPane.columnIndex="1">
                                     <children>
-                                        <ToggleButton fx:id="btnSkladiste" mnemonicParsing="false" onAction="#btnSkladisteOnAction" text="Skladište" />
-                                        <ToggleButton fx:id="btnDobavljac" mnemonicParsing="false" onAction="#btnDobavljacOnAction" text="Dobavljač" />
-                                        <ToggleButton fx:id="btnBrendovi" mnemonicParsing="false" onAction="#btnBrendoviOnAction" text="Brendovi" />
-                                        <ToggleButton fx:id="btnKategorija" mnemonicParsing="false" onAction="#btnKategorijaOnAction" text="Kategorija" />
+                                        <ToggleButton fx:id="btnSkladiste" mnemonicParsing="false" onAction="#btnSkladisteOnAction" text="%Skladiste" />
                                     </children>
                                     <padding>
                                         <Insets right="10.0" />
@@ -33,7 +30,7 @@
                                 </HBox>
                                 <AnchorPane prefHeight="200.0" prefWidth="200.0">
                                     <children>
-                                        <Label fx:id="lblHeader" layoutX="14.0" layoutY="21.0" text="Poslovnica">
+                                        <Label fx:id="lblHeader" layoutX="14.0" layoutY="21.0" text="%Poslovnica">
                                             <font>
                                                 <Font size="34.0" />
                                             </font>
@@ -53,10 +50,10 @@
             </center>
         </BorderPane>
     </children>
-   <columnConstraints>
-      <ColumnConstraints />
-   </columnConstraints>
-   <rowConstraints>
-      <RowConstraints />
-   </rowConstraints>
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
 </GridPane>

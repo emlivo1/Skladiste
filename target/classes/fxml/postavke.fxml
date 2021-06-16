@@ -23,21 +23,13 @@
                                     <children>
                                         <MenuBar layoutX="81.0" layoutY="16.0">
                                             <menus>
-                                                <Menu mnemonicParsing="false" text="Račun">
+                                                <Menu mnemonicParsing="false" text="%Racun">
                                                     <items>
-                                                        <MenuItem fx:id="miMyAccount" mnemonicParsing="false" onAction="#miMyASccountOnClick" text="Moj račun" />
+                                                        <MenuItem fx:id="miMyAccount" mnemonicParsing="false" onAction="#miMyASccountOnClick" text="%Racun" />
+                                                        <MenuItem fx:id="miIzvjestaj" mnemonicParsing="false" onAction="#miKreirajIzvjestaj" text="%Izvjestaj" />
                                                     </items>
                                                 </Menu>
-                                                <Menu mnemonicParsing="false" text="Organizacija">
-                                                    <items>
-                                                        <MenuItem fx:id="miOrganize" mnemonicParsing="false" onAction="#miOrganizeOnAction" text="Organizacija detalji" />
-                                                    </items>
-                                                </Menu>
-                                                <Menu mnemonicParsing="false" text="Data Backup" visible="false">
-                                                    <items>
-                                                        <MenuItem fx:id="miBackup" mnemonicParsing="false" onAction="#miBackupOnAction" text="Backup/Restore" />
-                                                    </items>
-                                                </Menu>
+
                                             </menus>
                                         </MenuBar>
                                     </children>
@@ -48,7 +40,7 @@
                             <children>
                                 <AnchorPane prefHeight="200.0" prefWidth="200.0">
                                     <children>
-                                        <Label fx:id="lblCurrentStatus" layoutX="14.0" layoutY="12.0" text="Postavke">
+                                        <Label fx:id="lblCurrentStatus" layoutX="14.0" layoutY="12.0" text="%Postavke">
                                             <font>
                                                 <Font size="32.0" />
                                             </font>
